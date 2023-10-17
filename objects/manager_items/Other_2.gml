@@ -50,3 +50,26 @@ new Item("artichoke seed", spr_seed_artichoke, item_category.SEED)
 		
 		return false;
 	});
+
+new Item("corn", spr_crop_corn, item_category.CROP)
+	.spend_when_used()
+	.has_description("+10 Health")
+	.do_when_used(function(_user) {
+		show_debug_message("YUMMY CORN!");
+		return true;
+	});
+
+new Item("corn seed", spr_seed_corn, item_category.SEED)
+	.has_description("Plants corn crop")
+	.do_when_used(function(_user) {
+		var pos = _user.grid_target;
+		if crops_can_be_planted_on(pos) {
+			if !crop_fields.has_crop_at(pos.x, pos.y) {
+				crop_fields.add_crop_at(pos.x, pos.y, crops.CORN);
+				show_debug_message("CORN SEED IN GROUND!");
+				return true;
+			}
+		}
+		
+		return false;
+	});

@@ -39,6 +39,7 @@
     {"name":"inst_8233F4A","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_3B9296E6","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_761C484E","path":"rooms/room_test/room_test.yy",},
+    {"name":"inst_485FB841","path":"rooms/room_test/room_test.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -133,6 +134,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8233F4A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"manager_items","path":"objects/manager_items/manager_items.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3B9296E6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"item_tomato_seed","path":"objects/item_tomato_seed/item_tomato_seed.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":624.0,"y":176.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_761C484E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"item_artichoke_seed","path":"objects/item_artichoke_seed/item_artichoke_seed.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":688.0,"y":240.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_485FB841","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"item_corn_seed","path":"objects/item_corn_seed/item_corn_seed.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":752.0,"y":304.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_Debug_Info","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
 -327,-2147483648,1,4,-20,-2147483648,-2,4,-17,-2147483648,1,4,-20,-2147483648,-2,0,-108,-2147483648,-2,4,-112,-2147483648,1,4,-29,-2147483648,-7,5,-3,-2147483648,1,4,-28,-2147483648,-9,5,-31,-2147483648,-9,5,
