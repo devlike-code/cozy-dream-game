@@ -16,8 +16,8 @@ else if input_check("left") { move_input = true; turn_direction = char_layout_di
 else if input_check("down") { move_input = true; turn_direction = char_layout_direction.DOWN; }
 else if input_check("right") { move_input = true; turn_direction = char_layout_direction.RIGHT; }
 
-if input_check_released("action") { action_input = true; }
-else if input_check_released("special") { tool_input = true; }
+if input_check_released("pickup") { action_input = true; }
+else if input_check_released("tool") { tool_input = true; }
 
 if input_check_released("inventory_up") { inventory_move_vec.y = -1; }
 else if input_check_released("inventory_down") { inventory_move_vec.y = 1; }

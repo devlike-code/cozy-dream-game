@@ -18,8 +18,8 @@ function inventory_draw(_i, _offset_x = 10, _offset_y = 10) {
 	for (var i = 0; i < _i.width; i++) {
 		for (var j = 0; j < _i.height; j++) {
 			var old_color = draw_get_color();
-			draw_set_color(c_gray);
-			draw_rectangle(_offset_x + i * 36, _offset_y + j * 36, _offset_x + i * 36 + 32, _offset_y + j * 36 + 32, true);
+			draw_set_color(c_silver);
+			draw_rectangle(_offset_x + i * 36, _offset_y + j * 36, _offset_x + i * 36 + 32, _offset_y + j * 36 + 32, false);
 			draw_set_color(old_color);
 			var item = ds_grid_get(_i.inventory, i, j);
 			if item != noone {
