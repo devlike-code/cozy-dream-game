@@ -29,7 +29,7 @@ return {
 		inventory: input_binding_key(vk_tab),
         		
         //No aiming verbs since we use the mouse for that (see below for aiming verb examples)
-        shoot: input_binding_mouse_button(mb_left),
+        shoot: input_binding_key(vk_capslock),
         
         pause: input_binding_key(vk_escape),
     },

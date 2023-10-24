@@ -8,4 +8,6 @@ if manager_debug.debug_on {
 	scribble("State: " + fsm.get_current_state()).draw(20, 110);
 }
 
-inventory_draw(inventory);
+if is_inventory_open {
+	inventory_draw(inventory);
+}
