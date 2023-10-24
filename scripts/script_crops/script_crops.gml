@@ -72,8 +72,12 @@ function CropField(_room_name, _width, _height) constructor {
 	}
 }
 
-function crops_can_be_planted_on(_grid) {
+function crops_can_be_planted_on(_grid_point) {
 	var crops = layer_tilemap_get_id("Tiles_Crops");
-	show_debug_message(_grid);
-	return tilemap_get(crops, _grid.x, _grid.y);
+	return tilemap_get(crops, _grid_point.x, _grid_point.y) > 1;
+}
+
+function crops_make_plantable(_grid_point) {
+	var crops = layer_tilemap_get_id("Tiles_Crops");
+	tilemap_set(crops, 2, _grid_point.x, _grid_point.y);
 }
