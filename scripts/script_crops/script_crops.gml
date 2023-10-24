@@ -63,7 +63,7 @@ function CropField(_room_name, _width, _height) constructor {
 					if item.days > global.crop_grow_speeds[item.crop][item.stage] {
 						item.days = 0;
 						item.stage += 1;
-						item.instance.sprite_index = item.stage;
+						item.instance.image_index = item.stage;
 						ds_grid_set(crop_field, _i, _j, item);
 					}
 				}

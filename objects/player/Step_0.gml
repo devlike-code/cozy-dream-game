@@ -19,7 +19,7 @@ else if input_check("right") { move_input = true; turn_direction = char_layout_d
 if input_check_released("pickup") { action_input = true; }
 else if input_check_released("tool") { tool_input = true; }
 
-if input_check_released("pause") { is_inventory_open = !is_inventory_open; }
+if input_check_released("inventory") { is_inventory_open = !is_inventory_open; }
 
 if input_check_released("inventory_up") { inventory_move_vec.y = -1; }
 else if input_check_released("inventory_down") { inventory_move_vec.y = 1; }
@@ -54,7 +54,7 @@ if non_walk_action_taken != noone {
 	go_to_idle();
 }
 
-if input_check_double_released("shoot") { manager_items.crop_fields.pass_time(); }
+if input_check_released("debug_time") { manager_items.crop_fields.pass_time(); }
 
 if keyboard_check_released(ord("1")) {
 	base_index = manager_characters.bases.next_variant(base_index);
