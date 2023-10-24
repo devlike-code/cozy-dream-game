@@ -10,13 +10,13 @@ enum crops {
 }
 
 global.crop_grow_speeds = [	// measured in days
-	[ 3, 4, 5, 6 ],		// TOMATO
+	[ 1, 4, 5, 6 ],		// TOMATO
 	[ 2, 3, 5, 5 ],		// POTATO
-	[ 3, 2, 4, 5 ],		// CARROT
-	[ 4, 4, 4, 5 ],		// ARTICHOKE
-	[ 3, 4, 5, 6 ],		// PEPPER
-	[ 5, 4, 5, 4 ],		// GOURD
-	[ 4, 4, 5, 5 ],		// CORN
+	[ 1, 2, 4, 5 ],		// CARROT
+	[ 2, 4, 4, 5 ],		// ARTICHOKE
+	[ 1, 4, 5, 6 ],		// PEPPER
+	[ 2, 4, 5, 4 ],		// GOURD
+	[ 1, 4, 5, 5 ],		// CORN
 ];
 
 global.crop_growth = [	// sprites
@@ -77,7 +77,18 @@ function crops_can_be_planted_on(_grid_point) {
 	return tilemap_get(crops, _grid_point.x, _grid_point.y) > 1;
 }
 
-function crops_make_plantable(_grid_point) {
+function crops_is_planting_allowed(_grid_point) {
+	var crops = layer_tilemap_get_id("Tiles_Crops");
+	return tilemap_get(crops, _grid_point.x, _grid_point.y) > 0;
+}
+
+function crops_make_tile_unplantable(_grid_point) {
+	var crops = layer_tilemap_get_id("Tiles_Crops");
+	tilemap_set(crops, 1, _grid_point.x, _grid_point.y);
+}
+
+function crops_make_tile_plantable(_grid_point) {
 	var crops = layer_tilemap_get_id("Tiles_Crops");
 	tilemap_set(crops, 2, _grid_point.x, _grid_point.y);
 }
+

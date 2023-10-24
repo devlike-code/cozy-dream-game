@@ -9,7 +9,7 @@
   ],
   "parent": {
     "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "path": "folders/Objects/Items/Crops/Items.yy",
   },
   "parentObjectId": {
     "name": "abstract_pickup_item",

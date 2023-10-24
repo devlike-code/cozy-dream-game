@@ -4,7 +4,7 @@
 	CROP = 2,
 	TOOL = 3,
 */
-
+	
 new Item("tomato", spr_crop_tomato, item_category.CROP)
 	.spend_when_used()
 	.has_description("+10 Health")

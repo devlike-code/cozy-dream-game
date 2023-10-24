@@ -8,8 +8,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_pickup_item","path":"objects/abstract_pickup_item/abstract_pickup_item.yy",},"propertyId":{"name":"name","path":"objects/abstract_pickup_item/abstract_pickup_item.yy",},"value":"\"corn seed\"",},
   ],
   "parent": {
-    "name": "Items",
-    "path": "folders/Objects/Items.yy",
+    "name": "Seeds",
+    "path": "folders/Objects/Items/Crops/Seeds.yy",
   },
   "parentObjectId": {
     "name": "abstract_pickup_item",
