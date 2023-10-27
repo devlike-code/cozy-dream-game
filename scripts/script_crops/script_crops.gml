@@ -27,6 +27,16 @@ global.crop_growth = [	// sprites
 	spr_crops_pepper,
 	spr_crops_gourd,
 	spr_crops_corn,
+];
+
+global.crop_fruits = [	// sprites
+	spr_crop_tomato,
+	spr_crop_potato,
+	spr_crop_carrot,
+	spr_crop_artichoke,
+	spr_crop_pepper,
+	spr_crop_gourd,
+	spr_crop_corn,
 ]
 
 function CropField(_room_name, _width, _height) constructor {
@@ -52,6 +62,10 @@ function CropField(_room_name, _width, _height) constructor {
 			fresh_crop.sprite_index = global.crop_growth[_crop];
 			ds_grid_set(crop_field, _x, _y, { crop: _crop, stage: 0, days: 0, instance: fresh_crop });
 		}
+	}
+	
+	static get_crop_at = function(_x, _y) {
+		return ds_grid_get(crop_field, _x, _y);
 	}
 	
 	static pass_time = function() {

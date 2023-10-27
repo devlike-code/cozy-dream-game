@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings": [
-    {"name":"Tools","order":1,"path":"folders/Sprites/Items/Tools.yy",},
     {"name":"Crops","order":1,"path":"folders/Objects/Items/Crops.yy",},
-    {"name":"Seeds","order":1,"path":"folders/Objects/Items/Crops/Seeds.yy",},
     {"name":"Items","order":2,"path":"folders/Objects/Items/Crops/Items.yy",},
+    {"name":"Seeds","order":1,"path":"folders/Objects/Items/Crops/Seeds.yy",},
     {"name":"Tools","order":2,"path":"folders/Objects/Items/Tools.yy",},
+    {"name":"Tools","order":1,"path":"folders/Sprites/Items/Tools.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"item_corn_seed","order":2,"path":"objects/item_corn_seed/item_corn_seed.yy",},
@@ -14,6 +14,7 @@
     {"name":"item_pepper","order":4,"path":"objects/item_pepper/item_pepper.yy",},
     {"name":"item_tomato","order":6,"path":"objects/item_tomato/item_tomato.yy",},
     {"name":"item_tomato_seed","order":6,"path":"objects/item_tomato_seed/item_tomato_seed.yy",},
+    {"name":"spr_speech_balloon","order":1,"path":"sprites/spr_speech_balloon/spr_speech_balloon.yy",},
     {"name":"item_gourd","order":3,"path":"objects/item_gourd/item_gourd.yy",},
     {"name":"item_potato_seed","order":5,"path":"objects/item_potato_seed/item_potato_seed.yy",},
     {"name":"item_carrot_seed","order":1,"path":"objects/item_carrot_seed/item_carrot_seed.yy",},

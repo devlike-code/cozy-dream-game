@@ -4,7 +4,30 @@
 	CROP = 2,
 	TOOL = 3,
 */
+new Item("hoe", spr_tool_hoe, item_category.TOOL)
+	.has_description("Can make ground plantable")
+    .do_when_used(function(_user) {
+        var pos = _user.grid_target;
+		if crops_is_planting_allowed(pos) {
+			crops_make_tile_plantable(pos);
+			show_debug_message("HOE USED!");
+			return true;
+		}
+    });
 	
+/*
+new Item("hoe", spr_tool_hoe, item_category.TOOL)
+	.has_description("Can make ground plantable")
+    .do_when_used(function(_user) {
+        var pos = _user.grid_target;
+		if crops_is_planting_allowed(pos) {
+			crops_make_tile_plantable(pos);
+			show_debug_message("HOE USED!");
+			return true;
+		}
+    });
+*/
+
 new Item("tomato", spr_crop_tomato, item_category.CROP)
 	.spend_when_used()
 	.has_description("+10 Health")
