@@ -1,4 +1,7 @@
 
+take_over_and_wait_for_end_of_animation = false;
+waiting_on_item = noone;
+
 last_area = 0;
 pivot_position_x = 32;
 pivot_position_y = 64;
@@ -60,21 +63,23 @@ fsm = new SnowState("idle")
 				frame_index = 0;
 			}
 		},
-		step: function() {
+		step: function() {			
 			frame_transition += CHAR_ANIM_SPEED * animation_speed_mod * (1.0 / 60.0);
 			frame_index = round(frame_transition);
 			
-			var _v = char_direction_to_vector(turn_direction);
-			x += _v.x * movement_speed;
-			y += _v.y * movement_speed;
-			update_pivot();
-			
-			if collision_with_world(self, collision_size_x, collision_size_y) {
-				x -= _v.x * movement_speed;
-				y -= _v.y * movement_speed;
+			if !take_over_and_wait_for_end_of_animation {
+				var _v = char_direction_to_vector(turn_direction);
+				x += _v.x * movement_speed;
+				y += _v.y * movement_speed;
 				update_pivot();
-			} else {
-				update_area();
+			
+				if collision_with_world(self, collision_size_x, collision_size_y) {
+					x -= _v.x * movement_speed;
+					y -= _v.y * movement_speed;
+					update_pivot();
+				} else {
+					update_area();
+				}
 			}
 		}
 	})
@@ -87,5 +92,6 @@ function go_to_idle() {
 
 function go_to_anim(_new_state, _start_over = false) {
 	transition_start_over = _start_over;
+	current_action = _new_state;
 	fsm.trigger("goto");
 }

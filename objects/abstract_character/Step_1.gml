@@ -1,4 +1,3 @@
 
-event_inherited();
-
+depth = -pivot.y;
 fsm.step();

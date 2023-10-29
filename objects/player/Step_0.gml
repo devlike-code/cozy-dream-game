@@ -1,4 +1,15 @@
 
+if take_over_and_wait_for_end_of_animation {
+	if manager_characters.layout.is_last_frame(current_action, frame_index) {
+		take_over_and_wait_for_end_of_animation = false;
+		waiting_on_item.use(self);
+		tool_index = 0;
+		waiting_on_item = noone;
+	} else {
+		exit;
+	}
+}
+
 var nearest_item = instance_nearest(pivot.x, pivot.y, abstract_pickup_item);
 if nearest_item != noone {
 	if distance_from_pivot(nearest_item.x, nearest_item.y) < 32 {
@@ -40,9 +51,16 @@ var non_walk_action_taken = noone;
 if tool_input {
 	var selected_item = inventory_get_selected(inventory);
 	if selected_item != noone {
-		// TODO: action here will happen instantly, we might want to wait
-		non_walk_action_taken = selected_item.action;
-		selected_item.use(self);
+		if selected_item.action != noone {
+			non_walk_action_taken = selected_item.action;
+			if selected_item.tool != 0 {
+				tool_index = selected_item.tool;
+			}
+			take_over_and_wait_for_end_of_animation = true;
+			waiting_on_item = selected_item;
+		} else {
+			selected_item.use(self);
+		}
 	}
 }
 
@@ -74,4 +92,8 @@ if keyboard_check_released(ord("4")) {
 
 if keyboard_check_released(ord("5")) {
 	hair_index = manager_characters.hair.next_variant(hair_index);
+}
+
+if keyboard_check_released(ord("6")) {
+	tool_index = manager_characters.tools.next_variant(tool_index);
 }

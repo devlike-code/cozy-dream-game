@@ -9,7 +9,13 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":73,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"torso_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"base_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"feet_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"legs_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"hair_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
+  ],
   "parent": {
     "name": "Player",
     "path": "folders/Objects/Player.yy",

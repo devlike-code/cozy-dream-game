@@ -8,11 +8,12 @@ enum item_category {
 
 global.items = ds_map_create();
 
-function Item(_name, _image, _category, _action = noone) constructor {
+function Item(_name, _image, _category) constructor {
 	name = _name;
 	image = _image;
+	tool = 0;
 	category = _category;
-	action = _action;
+	action = noone;
 	spendable = false;
 	description = "ITEM DESCRIPTION MISSING";
 	ds_map_add(global.items, name, self); 
@@ -20,6 +21,16 @@ function Item(_name, _image, _category, _action = noone) constructor {
 	effect = function(_user) {
 		show_debug_message("WARNING: the {0} tool's usage is not set, so it does nothing when called.");
 	};
+	
+	static presents_action = function(_action) {
+		action = _action;
+		return self;
+	};
+	
+	static uses_tool = function(_tool) {
+		tool = _tool;
+		return self;
+	}
 	
 	static spend_when_used = function() {
 		spendable = true;

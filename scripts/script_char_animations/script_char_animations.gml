@@ -9,7 +9,8 @@ enum char_layout_layer {
 	FEET,
 	HAIR,
 	LEGS,
-	TORSO
+	TORSO,
+	TOOL,
 };
 
 enum char_layout_direction {
@@ -51,6 +52,16 @@ function CharLayout(_name, _width, _height, _offset_x = 0, _offset_y = 0) constr
 		} else {
 			return 0;
 		}
+	}
+	
+	static get_frame_index = function(_name, _frame) {
+		var _len = self.action_lengths[? _name];
+		return _frame % _len;
+	}
+
+	static is_last_frame = function(_name, _frame) {
+		var _len = self.action_lengths[? _name];
+		return _frame % _len == _len - 1;
 	}
 	
 	static get_frame_rect = function(_name, _dir, _frame) {

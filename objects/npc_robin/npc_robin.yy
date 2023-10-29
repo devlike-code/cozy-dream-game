@@ -7,11 +7,11 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"base_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"torso_index","path":"objects/abstract_character/abstract_character.yy",},"value":"0",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"feet_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"legs_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"hair_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"base_index","path":"objects/abstract_character/abstract_character.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"torso_index","path":"objects/abstract_character/abstract_character.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"feet_index","path":"objects/abstract_character/abstract_character.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"legs_index","path":"objects/abstract_character/abstract_character.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"hair_index","path":"objects/abstract_character/abstract_character.yy",},"value":"2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"abstract_character","path":"objects/abstract_character/abstract_character.yy",},"propertyId":{"name":"turn_direction","path":"objects/abstract_character/abstract_character.yy",},"value":"2",},
   ],
   "parent": {
